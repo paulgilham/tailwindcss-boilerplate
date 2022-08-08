@@ -30,5 +30,5 @@ gulp.task('styles', gulp.series('sass', function () {
             defaultExtractor: content =>
               content.match(/[\w-/:]+(?<!:)/g) || []
         }))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./assets/css'));
 }));

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "gulp": "./node_modules/gulp-cli/bin/gulp.js styles",
-    "build": "npx tailwindcss build ./src/input.css -o ./css/styles.css"
+    "build": "npx tailwindcss build ./src/input.css -o ./assets/css/styles.css"
   },
   "author": "",
   "license": "ISC",
