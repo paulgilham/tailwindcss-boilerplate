@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'c2184a4031e969e77d19c7a33d9d2045f9d6ab6a',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -440,12 +440,12 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'c2184a4031e969e77d19c7a33d9d2045f9d6ab6a',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
@@ -455,6 +455,15 @@
             'install_path' => __DIR__ . '/../../web/modules/contrib/redirect',
             'aliases' => array(),
             'reference' => '8.x-1.7',
+            'dev_requirement' => false,
+        ),
+        'drupal/simplify_menu' => array(
+            'pretty_version' => '2.1.0',
+            'version' => '2.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/simplify_menu',
+            'aliases' => array(),
+            'reference' => '8.x-2.1',
             'dev_requirement' => false,
         ),
         'drupal/twig_tweak' => array(

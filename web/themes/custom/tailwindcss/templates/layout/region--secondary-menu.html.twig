@@ -1,0 +1,15 @@
+{# Navbar wrapper #}
+<div class="text-gray-400 bg-yellow-400 body-font">
+    {# Navbar container #}
+    <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-end">
+
+        {# Navbar Menu #}
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        {# Iterate menu tree #}
+        {% set menu_items = simplify_menu('account') %}
+        {% for menu_item in menu_items.menu_tree %}
+            <a class="mr-5 hover:text-white" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+        {% endfor %}
+        </nav>
+    </div>
+</div>{# Endof Navbar #}

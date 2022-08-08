@@ -2,3 +2,9 @@ global-styling:
   css:
     base:
       css/styles.css: {}
+
+animated_css:
+  css:
+    base:
+      libs/animate_css/animate.css: {}
+
