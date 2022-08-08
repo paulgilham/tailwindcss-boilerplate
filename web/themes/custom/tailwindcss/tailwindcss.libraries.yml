@@ -1,10 +1,10 @@
 global-styling:
   css:
-    base:
+    theme:
       assets/css/styles.css: {}
 
-animated_css:
+animate_css:
   css:
-    base:
+    theme:
       assets/libs/animate_css/animate.css: {}
 

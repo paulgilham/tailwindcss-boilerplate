@@ -1,4 +1,4 @@
-@import "./components/custom.css";
+@import "./sass/index.scss";
 
 
 @tailwind base;

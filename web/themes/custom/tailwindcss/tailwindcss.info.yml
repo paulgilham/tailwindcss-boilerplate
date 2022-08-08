@@ -10,13 +10,10 @@ regions:
   header: Header
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
-  hero: 'Hero (full width)'
-  highlighted: Highlighted
-  breadcrumb: Breadcrumb
-  social: Social Bar
-  content_above: Content Above
-  content: Content
-  sidebar: 'Sidebar'
-  content_below: 'Content Below'
-  footer_top: 'Footer Top'
-  footer_bottom: 'Footer Bottom'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  footer: 'Footer'
+  breadcrumb: 'Breadcrumb'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
