@@ -70,28 +70,34 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes.addClass('node') }}>
 
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <article{{ attributes.addClass('node') }}>
+
+          {{ title_prefix }}
+          {% if not page %}
+            <h2{{ title_attributes }}>
+              <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            </h2>
+          {% endif %}
+          {{ title_suffix }}
+
+          {% if display_submitted %}
+            <footer>
+              {{ author_picture }}
+              <div{{ author_attributes }}>
+                {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+                {{ metadata }}
+              </div>
+            </footer>
+          {% endif %}
+
+          <div{{ content_attributes.addClass('node-content') }}>
+            {{ content }}
+          </div>
+
+        </article>
       </div>
-    </footer>
-  {% endif %}
-
-  <div{{ content_attributes.addClass('node-content') }}>
-    {{ content }}
-  </div>
-
-</article>
+    </section>

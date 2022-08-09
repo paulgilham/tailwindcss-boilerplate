@@ -1,23 +1,15 @@
-
 <!DOCTYPE html>
-<html{{ html_attributes }}>
-  <head>
-    <head-placeholder token="{{ placeholder_token|raw }}">
-    <title>{{ head_title|safe_join(' | ') }}</title>
-    <css-placeholder token="{{ placeholder_token|raw }}">
-    <js-placeholder token="{{ placeholder_token|raw }}">
-  </head>
-  <body{{ attributes }}>
-    {#
-      Keyboard navigation/accessibility link to main content section in
-      page.html.twig.
-    #}
-    <a href="#main-content" class="visually-hidden focusable">
-      {{ 'Skip to main content'|t }}
-    </a>
+<html>
+<head>
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
 
-    {{ page }}
+<body>
+   {% include directory ~ "/partials/header.html.twig" %}
+  {% include directory ~ "/partials/hero.html.twig" %}
+  
+  {% include directory ~ "/partials/body.html.twig" %}
+  {% include directory ~ "/partials/footer.html.twig" %}
+</body>
 
-    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
-  </body>
 </html>
